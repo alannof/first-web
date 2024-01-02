@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
+}
+
+body {
+    background-color: #61677a;
+}
+nav {
+    display: grid;
+    background-repeat: no-repeat;
+    background-color: #262624;
+    background-size: 50%;
+    background-image: url(nat.jpg);
+    border-radius: 70px;
+    
+}
+ul#menu {
+    justify-content: space-evenly;
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0;
+}
+#about a, #spotify a {
+    color: #fff6e0;
+}
+li#about,li#spotify {
+    position: relative;
+    font-family: "Audiowide", sans-serif;
+    font-size: 3vw;
+    padding-inline: 2vw;
+    
+}
+li#about a:hover,li#spotify a:hover {
+    color: rgb(205, 29, 23);
+    transition: .5s ease;
+    transition-delay: .1s;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    font-size: 1.125rem;
+} 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: none;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;  
+    width: 120px;     
+    height: auto;     
+    background-color: black;      
+    color: #fff;      
+    text-align: center;      
+    border-radius: 10px;     
+    padding: 5px, 0;
+    position: static;      
+    z-index: -1px;
+    
+    
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Granesta.ttf);
+}
+h1.top {
+    font-size: 4.5rem;
+    font-family: myFont;
+    margin: 40px;
+    text-shadow: 4px 4px 2px black;
+    color: #687eff;
+    justify-content: center;
+    display: flex;
+    animation-name: h1;
+    animation-duration: 8s;   
+    animation-delay: none;   
+    animation-iteration-count: infinite;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+}
+@keyframes h1 {
+    0% {color: #b6fffa; left: 0px; top: 0px;}
+    25% {color:#98e4ff; left: 100px; top: 0px;}
+    50% {color:#80b3ff; left: 100px; top: 100px;}
+    75% {color:#98e4ff; left: 0px; top: 100px;}
+    100% {color:#687eff; left: 0px; top: 0px;}
+}
+.tambahan {
+    font-style: italic;
+    font-size: medium;
+}
+/* div#generasi { 
+    color: black;
+    font-size: medium;
+    display: flex;
+    border-radius: 20px;
+    background-color: #f3f705;
+    justify-content: center;
+    text-size-adjust: 1rem;
+} */
+
+.game, .music, .anime, .drakor{
+    display: flexbox;
+    justify-content: flex-start;
+    color: black;
+}
+article ul {
+    color: #fff6e0;
+}
+/*.konten {
+
+}*/
